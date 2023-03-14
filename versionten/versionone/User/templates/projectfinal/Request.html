@@ -1,0 +1,362 @@
+{% load static %}
+@import "compass/css3";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<style>
+	
+
+	* { box-sizing: border-box; }
+	
+	body {
+		font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	  color:rgba(84, 66, 66, 0.121);
+	  font-size:15px;
+	  background:#333 url(/static/images/classy_fabric.png);
+	}
+	
+	form {
+	background:rgb(177, 176, 182); 
+	  width:380px;
+	  margin:40px 8%;
+	  border-radius:0.4em;
+	  border:2px solid #191919;
+	 overflow: hidden;
+	  position:relative;
+	  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+	  opacity: 75%;
+	  font : bolder;
+	  text-emphasis-color:rgb(2, 1, 1);
+	  text-shadow: #020000;
+	  font-family: 'Times New Roman', Times, serif;
+	  font-size: large;
+	  font-stretch: extra-expanded;
+	}
+	
+	form:after {
+	  content:"";
+	  display:block;
+	  position:absolute;
+	  height:1px;
+	  width:100px;
+	  left:20%;
+	  background:linear-gradient(left, #111, #444, #b6b6b8, #444, #111);
+	  top:0;
+	}
+	
+	form:before {
+		 content:"";
+	  display:block;
+	  position:absolute;
+	  width:8px;
+	  height:5px;
+	  border-radius:50%;
+	  left:34%;
+	  top:-7px;
+	  box-shadow: 0 0 6px 4px #fff;
+	}
+	
+	.inset {
+		 padding:20px; 
+	  border-top:1px solid #19191a;
+	}
+	
+	form h1 {
+	  font-size:18px;
+	  text-shadow:0 1px 0 rgb(0, 0, 0);
+	  text-align:center;
+	  padding:15px 0;
+	  border-bottom:1px solid rgba(0,0,0,1);
+	  position:relative;
+	}
+	
+	form h1:after {
+		 content:"";
+	  display:block;
+	  width:250px;
+	  height:100px;
+	  position:absolute;
+	  top:0;
+	  left:50px;
+	  pointer-events:none;
+	  transform:rotate(70deg);
+	  background:linear-gradient(50deg, rgba(255,255,255,0.15), rgba(0,0,0,0));
+	  
+	}
+	
+	label {
+		 color:#020000;
+	  display:block;
+	  padding-bottom:9px;
+	 
+	}
+	
+	input[type=text],
+	input[type=password] {
+		 width:100%;
+	  padding:8px 5px;
+	  background:linear-gradient(#1f2124, #27292c);
+	  border:1px solid #222;
+	  box-shadow:
+		0 1px 0 rgba(255,255,255,0.1);
+	  border-radius:0.3em;
+	  margin-bottom:20px;
+	}
+	
+	
+	.p-container {
+		 padding:0 20px 20px 20px; 
+	}
+	
+	.p-container:after {
+		 clear:both;
+	  display:table;
+	  content:"";
+	}
+	
+	.p-container span {
+	  display:block;
+	  float:right;
+	  color:#0c0f11;
+	  padding-top:8px;
+	}
+	
+	input[type=submit] {
+		 padding:5px 20px;
+	  border:1px solid rgba(0,0,0,0.4);
+	  text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+	  box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.3),
+		inset 0 10px 10px rgba(255,255,255,0.1);
+	  border-radius:0.3em;
+	  background:#050708;
+	  color:white;
+	  float:left;
+	  font-weight:bold;
+	  cursor:pointer;
+	  font-size:13px;
+	}
+	
+	input[type=submit]:hover {
+	  box-shadow:
+		inset 0 1px 0 rgba(255,255,255,0.3),
+		inset 0 -10px 10px rgba(255,255,255,0.1);
+	}
+	
+	input[type=text]:hover,
+	input[type=password]:hover,
+	label:hover ~ input[type=text],
+	label:hover ~ input[type=password] {
+		 background:#27292c;
+		-webkit-text-fill-color: #fff;
+	}
+
+</style>
+	<title>Recuse Wings</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="/static/css/animate.css">
+	
+	<link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+
+	<link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="/static/css/jquery.timepicker.css">
+
+	<link rel="stylesheet" href="/static/css/flaticon.css">
+	<link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" type="/static/text/css" href="/static/css/SignUp.css">  
+</head>
+<body style="background-image: url('/static/images/bg_2.jpg');" data-stellar-background-ratio="0.1">
+
+	<div class="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex align-items-center">
+					<p class="mb-0 phone pl-md-2">
+						<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +91 8169125721</a> 
+						<a href="#"><span class="fa fa-paper-plane mr-1"></span> khushbuagrawal8169@gamil.com</a>
+					</p>
+				</div>
+				<div class="col-md-6 d-flex justify-content-md-end">
+					<div class="social-media">
+						<p class="mb-0 d-flex">
+							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+							<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Recuse Wings</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{% url 'detail' %}" class="nav-link">Profile</a></li>
+					
+					<li class="nav-item"><a href="{% url 'Blog' %}" class="nav-link">Blog</a></li>
+					<li class="nav-item active"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+					<li class="nav-item cta"><a href="{% url 'login' %}" class="nav-link">Log In </a></li>
+					<li class="nav-item cta"><a href="{% url 'register' %}" class="nav-link"> Sign Up</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+  
+ 
+  <br>
+  <br>
+  
+  <form action="" method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+	<h1 style="font-size: x-large;"><bold>Fill The below Form</bold></h1>
+    <div class="inset">
+	{% for field in form %}
+    <p>
+      <label for="Name">{{ field.label }}:</label>
+	  {{field}}
+      <!--<input type="text" name="{{ field }}" id="name">-->
+    </p>
+
+    {% endfor %}
+    </div>
+    <p class="p-container">
+     
+      <input style="font-size: large;" type="submit" name="go" id="go" value="Register">
+    </p>
+    {% for message in messages %}
+    
+<div class="alert alert-success">
+	<a class="close" href="#" data-dismiss="alert">×</a>
+	   {{ message }}
+</div>
+
+{% endfor %}
+</div>
+
+
+  </form>
+</p>
+
+	
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading">Recuse Wings</h2>
+					<p>Little Drop of water make a mighty ocean and Every drop of water has a story behind</p>
+					<ul class="ftco-footer-social p-0">
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+					</ul>
+					<p><a href="#" class="btn btn-quarternary">Donate Now</a></p>
+				</div>
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading">Latest News</h2>
+					<div class="block-21 mb-4 d-flex">
+						<a class="img mr-4 rounded" style="background-image: url(/static/images/image_1.jpg);"></a>
+						<div class="text">
+							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+							<div class="meta">
+								<div><a href="#">August 02, 2023</a></div>
+								<div><a href="#">Admin</a></div>
+								<div><a href="#">19</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="block-21 mb-4 d-flex">
+						<a class="img mr-4 rounded" style="background-image: url(/static/images/image_2.jpg);"></a>
+						<div class="text">
+							<h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+							<div class="meta">
+								<div><a href="#">Jul 20, 2022</a></div>
+								<div><a href="#">Admin</a></div>
+								<div><a href="#">19</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+					<h2 class="footer-heading">Quick Links</h2>
+					<ul class="list-unstyled">
+						<li ><a href="{% url 'index' %}" >Home</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li ><a href="{% url 'detail' %}" >Profile</a></li>
+					<li ><a href="causes.html" >Causes</a></li>
+					<li ><a href="{% url 'Blog' %}" >Blog</a></li>
+					<li ><a href="contact.html" >Contact</a></li>
+					<li ><a href="{% url 'login' %}">Log In </a></li>
+					<li ><a href="{% url 'register' %}"> Sign Up</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<h2 class="footer-heading">Have a Questions?</h2>
+					<div class="block-23 mb-3">
+						<ul>
+							<li><span class="icon fa fa-map"></span><span class="text">Thane,Maharashtra,India</span></li>
+							<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91 8169125721</span></a></li>
+							<li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">khushbuagrawal8169@gamil.com</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12 text-center">
+
+					<P>We are here for you!!!</P>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+		
+
+		<!-- loader -->
+		<div id="ftco-lo
+		
+		ader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+		<script src="/static/js/jquery.min.js"></script>
+		<script src="/static/js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="/static/js/popper.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/jquery.easing.1.3.js"></script>
+		<script src="/static/js/jquery.waypoints.min.js"></script>
+		<script src="/static/js/jquery.stellar.min.js"></script>
+		<script src="/static/js/jquery.animateNumber.min.js"></script>
+		<script src="/static/js/bootstrap-datepicker.js"></script>
+		<script src="/static/js/jquery.timepicker.min.js"></script>
+		<script src="/static/js/owl.carousel.min.js"></script>
+		<script src="/static/js/jquery.magnific-popup.min.js"></script>
+		<script src="/static/js/scrollax.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+		<script src="/static/js/google-map.js"></script>
+		<script src="/static/js/main.js"></script>
+		
+	</body>
+	</html>
